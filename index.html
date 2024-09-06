@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Gym Member Registration</h1>
+    <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia. </p>
+    <form  method="post" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label" class="subtitle">Enter your full name: <input id="name" type="text" name="first-name" required  placeholder="john doe"/></label><br>
+        <label for="number" id="number-label" class="subtitle">Input your age (years): <input id="number" type="number" name="age" min="15" max="120" placeholder="31"  /></label><br>
+        <label for="email" id="email-label" class="subtitle">Enter your email: <input id="email" name="email" type="email" required placeholder="johndoe@frs.com" /></label><br>
+        <label for="address" class="subtitle">Address: <input id="adress" name="address" type="text" required /></label><br>
+      </fieldset>
+      <fieldset>
+      <label for="start-date" id="date" class="subtitle">Start Date:</label>
+           <input type="date" id="start-date" name="gym-start" value="2024-07-22" min="2024-01-01" max="2018-12-31" /><br>
+       </fieldset>
+      <fieldset>
+           <label for="membership" class="subtitle">Membership Duration: </label><br>
+           </label for="month"><input id="month" type="radio" name="membership"  value="onemonth"/> 1 Month </label><br>
+           </label for="month3"> <input id="month3" type="radio" name="membership" value="threemonths"/> 3 months</label><br>
+           </label for="month6"> <input id="month6" type="radio" name="membership" value="sixmonth" /> 6 Months</label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture" class="subtitle">Upload a profile picture: <input id="profile-picture" type="file" name="file"/></label><br>
+        <label for="dropdown" class="subtitle">How did you hear about us?
+          <br><select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">City Adds</option>
+            <option value="2">Maps</option>
+            <option value="3">From a Friend</option>
+            <option value="4">Other</option>
+          </select>
+        </label><br>
+        <label for="exercise" class="subtitle">Favorite Exercise:</label><br>
+        <label for="exercise"><input id="yoga" type="checkbox" name="exercise" value="yoga" />Yoga</label><br>
+        <label  for="exercise" > <input id="pilates" type="checkbox" name="exercise" value="pilates" />Pilates</label><br>
+        <label  for="exercise"> <input id="crossfit" type="checkbox" name="exercise" value="crossfit" />Crossfit</label><br>
+         <label for="goal" class="subtitle">Tell us about your gym goal:
+        <textarea id="goal" name="bio" rows="4" cols="30" placeholder="I will loose 10 pounds and make new friends..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions" class="terms">
+        <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions"  value="terms"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label><br>
+      <input type="submit" value="Submit"  id="submit"/>
+    </form>
+  </body>
+</html>
